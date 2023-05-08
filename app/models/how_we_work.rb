@@ -1,0 +1,2 @@
+class HowWeWork < ApplicationRecord
+end
