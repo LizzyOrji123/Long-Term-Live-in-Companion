@@ -1,8 +1,11 @@
 class PagesController < ApplicationController
+  def home
+  end
+
   def why
   end
 
   def how_we_work
-    
+
   end
 end
