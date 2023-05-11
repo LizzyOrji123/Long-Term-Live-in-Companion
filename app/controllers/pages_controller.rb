@@ -8,4 +8,8 @@ class PagesController < ApplicationController
   def how_we_work
 
   end
+
+  def location
+
+  end
 end
