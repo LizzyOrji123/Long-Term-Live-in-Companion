@@ -5,7 +5,7 @@
 }
 
 .image{
-  border: 3px solid #555;
+  border: 1px solid #555;
   margin-top: 10px;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
@@ -19,7 +19,7 @@
 }
 
 .text{
-  border: 3px solid #555;
+  border: 1px solid #555;
   margin-top: 10px;
   color: black;
   text-shadow: 2px 2px 4px bisque;
@@ -29,3 +29,11 @@
   margin-top: 30px;
   padding-left: 10px;
 }
+
+
+
+@media (min-width: 500px) { body { color:#9D2235; }}// will match only screen width >= 500px
+@media (max-width: 768px) { body { color:#9D2235; }}// will match only screen width <= 768px
+@media (min-width: 768px) and (max-width: 990px) { body { color:#9D2235; }} // will match only screen width >= 768px and <= 990px (could be tablets also)
+@media (min-width: 991px) { body { color:#9D2235; }}// match also ipad on landscape mode
+@media (min-width: 1200px) { body { color:#9D2235; }} /* for desktops */
