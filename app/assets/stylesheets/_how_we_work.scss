@@ -32,8 +32,8 @@
 
 
 
-@media (min-width: 500px) { body { color:#9D2235; }}// will match only screen width >= 500px
-@media (max-width: 768px) { body { color:#9D2235; }}// will match only screen width <= 768px
-@media (min-width: 768px) and (max-width: 990px) { body { color:#9D2235; }} // will match only screen width >= 768px and <= 990px (could be tablets also)
-@media (min-width: 991px) { body { color:#9D2235; }}// match also ipad on landscape mode
-@media (min-width: 1200px) { body { color:#9D2235; }} /* for desktops */
+@media (min-width: 500px) { body, .image { color:#9D2235; }}// will match only screen width >= 500px
+@media (max-width: 768px) { body, .image { color:#9D2235; }}// will match only screen width <= 768px
+@media (min-width: 768px) and (max-width: 990px) { body, .image { color:#9D2235; }} // will match only screen width >= 768px and <= 990px (could be tablets also)
+@media (min-width: 991px) { body, .image { color:#9D2235; }}// match also ipad on landscape mode
+@media (min-width: 1200px) { body, .image { color:#9D2235; }} /* for desktops */
