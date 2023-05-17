@@ -1,6 +1,6 @@
 nav ul{
   display: flex;
-  width: 1000%;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -24,7 +24,7 @@ nav ul{
 
    .container-fluid{
     display: flex;
-    width: 5000%;
+    width: 100%;
     margin: 0;
     background-color: black;
     color: chocolate;
@@ -46,18 +46,18 @@ nav ul{
    }
 
    nav{
-    width: 1000%;
+    width: 100%;
 
    }
 
-   @media(max-width: 992px) {
-    .header {
-     display: none;
+  @media(max-width: 992px) {
+    .ul {
+     display:flex 1fr 1fr;
     }
   }
 
   @media(max-width: 768px) {
-    .header {
-      display: none;
+    .ul {
+      display:flex 1fr;
     }
   }
