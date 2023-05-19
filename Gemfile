@@ -27,6 +27,8 @@ gem "autoprefixer-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+gem "cloudinary"
+gem "dotenv-rails"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
