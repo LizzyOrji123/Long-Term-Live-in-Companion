@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light navbar-lebkucken" data-controller="navbar">
   <div class="container-fluid">
-    <%= link_to "/", class: "navbar-brand" do %>
+    <%= link_to "root", class: "navbar-brand" do %>
       <%= image_tag "https://res.cloudinary.com/drifm7p5t/image/upload/v1684450699/personal/barry_xjcdvh.png" %>
     <% end %>
     <button class="navbar-toggler custom-toggler" type="button" data-action="navbar#toggleMenu" data-navbar-target="toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,12 +9,12 @@
     <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarSupportedContent" data-navbar-target="menu">
       <div class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><%= link_to t("Home"), root_path(anchor: 'home'), class: "nav-link" %></li>
-        <li class="nav-item"><%= link_to t("Why"), why_path(anchor: ''), class: "nav-link" %></li>
+        <li class="nav-item"><%= link_to t("Why"), why_path(anchor: 'why'), class: "nav-link" %></li>
         <li class="nav-item"><%= link_to t("How we work"), how_we_work_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to t("Interview Locations"), location_path, class: "nav-link" %></li>
       </div>
       <span class="bar hide-on-tablet-and-mobile">&vert; </span>
-      
+
     </div>
   </div>
 </nav>
