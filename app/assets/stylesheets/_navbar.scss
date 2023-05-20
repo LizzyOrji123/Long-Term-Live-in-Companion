@@ -1,68 +1,4 @@
-// nav ul{
-//   display: flex;
-//   width: 100%;
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-//   }
-
-//   nav li{
-//     display: inline-block;
-//     margin-left: 200px;
-//     padding-top: 35px;
-//   }
-
-//   nav a{
-//     color: bisque;
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     font-size: 14px;
-  // }
-  //  nav ul :hover{
-  //   color: blue;
-  //  }
-
-  //  .container-fluid{
-  //   display: flex;
-  //   width: 100%;
-  //   margin: 0;
-  //   background-color: black;
-  //   color: chocolate;
-  //   font-style: italic;
-  //   font-size: 12px;
-  //   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  //   border: 1px solid black;
-  //   border-bottom: 0px;
-  //   align-items: stretch;
-  //   justify-content: space-evenly;
-  //  }
-
-  //  .header{
-  //     padding-right:0;
-  //     padding-left:0;
-  //     // margin-right:auto;
-  //     margin-left:auto
-  //     // width: 100%;
-  //  }
-
-  //  nav{
-  //   width: 100%;
-
-  //  }
-
-  // @media(max-width: 992px) {
-  //   .ul {
-  //    display:flex 1fr 1fr;
-  //   }
-  // }
-
-  // @media(max-width: 768px) {
-  //   .ul{
-  //     display:flex 1fr;
-  //   }
-  // }
-
-  /* Hide menu when x pressed */
+ /* Hide menu when x pressed */
 .navbar-collapse {
   display: none;
 }
@@ -115,10 +51,10 @@
 .navbar-lebkucken {
   justify-content: space-between;
   background: black;
-  padding: 10px;
+  padding: 4px;
 }
 .navbar-brand img {
-  height: 50px;
+  height: 120px;
   margin-left: 30px;
 }
 .navbar-lebkucken .navbar-collapse {
