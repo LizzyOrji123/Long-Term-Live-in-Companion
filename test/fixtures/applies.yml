@@ -2,8 +2,22 @@
 
 one:
   name: MyString
-  body: MyString
+  dob: 1
+  gender: MyString
+  marriage: MyString
+  occupation: MyString
+  email: MyString
+  phone: 1
+  country: MyString
+  photo: MyString
 
 two:
   name: MyString
-  body: MyString
+  dob: 1
+  gender: MyString
+  marriage: MyString
+  occupation: MyString
+  email: MyString
+  phone: 1
+  country: MyString
+  photo: MyString

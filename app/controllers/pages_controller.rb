@@ -16,4 +16,9 @@ class PagesController < ApplicationController
   def apply
 
   end
+
+  def new
+    render file: './app/views/pages/_new.html.erb'
+  @apply = Apply.new
+  end
 end
