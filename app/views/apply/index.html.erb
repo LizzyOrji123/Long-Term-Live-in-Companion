@@ -13,3 +13,11 @@
 <% @applies.each do |apply| %>
     <%= apply.name %>
   <% end %>
+
+<div class="col-12 col-lg-12">
+    <div class= "text">
+      <p>Click here to fill out our form</p>
+      <%= link_to ("Application Form"), apply_new_path %>
+    </div>
+  </div>
+</div>
