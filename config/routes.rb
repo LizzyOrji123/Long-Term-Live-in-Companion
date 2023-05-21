@@ -3,9 +3,9 @@ Rails.application.routes.draw do
   get "why", to: "pages#why"
   get "how_we_work", to: "pages#how_we_work"
   get "location", to: "pages#location"
-  get "apply", to: "pages#apply"
-  get "apply/new", to: "pages#new"
-  get "apply/:id", to: "pages#apply"
+  get "apply", to: "apply#index"
+  get "apply/new", to: "apply#new"
+  get "apply/:id", to: "apply#show", as: :applies
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")

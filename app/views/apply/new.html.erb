@@ -1,0 +1,58 @@
+<div class ="container">
+  <div class ="text">
+    <h2>LongTermLiveInCompanion</h2>
+  </div>
+
+  <%= form_with model: @apply do |f| %>
+    <div class="row justify-content-center">
+      <div class="row justify-content-center">
+          <div class="col-12 col-lg-6">
+            <div class="card">
+              <%= f.label :name %>
+              <%= f.text_field :name %>
+            </div>
+
+            <div class="card">
+              <%= f.label :Date_of_Birth %>
+              <%= f.number_field :dob %>
+            </div>
+
+            <div class="card">
+              <%= f.label :gender %>
+              <%= f.text_field :gender %>
+            </div>
+
+            <div class="card">
+              <%= f.label :Marital_Status %>
+              <%= f.text_field :marriage %>
+            </div>
+
+            <div class="card">
+              <%= f.label :Occupation %>
+              <%= f.text_field :occupation %>
+            </div>
+
+            <div class="card">
+              <%= f.label :email %>
+              <%= f.text_field :email %>
+            </div>
+
+            <div class="card">
+              <%= f.label :Phone_Number %>
+              <%= f.number_field :phone %>
+            </div>
+
+            <div class="card">
+              <%= f.label :Country %>
+              <%= f.text_field :country %>
+            </div>
+
+            <div class="card">
+              <%= f.submit %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>

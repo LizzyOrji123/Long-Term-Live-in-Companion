@@ -9,4 +9,7 @@
     </div>
   </div>
 </div>
-<%= @applies %>
+
+<% @applies.each do |apply| %>
+    <%= apply.name %>
+  <% end %>
