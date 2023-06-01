@@ -1,7 +1,7 @@
 body{
-  background-image: linear-gradient(to right, #9D2235 , #3797A4
-  );
+  background-image: linear-gradient(to right, #9D2235 , #3797A4)
 }
+
 // .card{
 //   display: flex;
 //   color: black;
@@ -99,7 +99,7 @@ body{
     align-items: center;
     border-radius: 20px;
     transition: all ease 0.2s;
-    margin: 20px;
+    margin: 30px;
   }
 
   .image:hover {
@@ -108,7 +108,7 @@ body{
   }
 
   .home-img {
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
@@ -133,7 +133,7 @@ body{
     align-items: center;
     border-radius: 20px;
     transition: all ease 0.2s;
-    margin: 20px;
+    margin: 30px;
   }
 
   .image:hover {

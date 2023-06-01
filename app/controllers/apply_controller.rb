@@ -4,8 +4,7 @@ class ApplyController < ApplicationController
   end
 
   def new
-
-  @applies = Apply.new
+    @applies = Apply.new
   end
 
   def show
@@ -13,14 +12,14 @@ class ApplyController < ApplicationController
   end
 
   def create
-    @applies = Apply.new(apply_params)
+    @applies = Apply.new
     @applies.save
-    redirect_to applies_path[apply]
+    redirect_to apply_path
   end
 end
 
 private
 
 def apply_params
-  params.require(:apply).permit(:name, :dob, :gender, :marriage, :occupation, :email, :phone, :country, :photo)
+  params.require(:id).permit(:name, :dob, :gender, :marriage, :occupation, :email, :phone, :country, :photo)
 end
