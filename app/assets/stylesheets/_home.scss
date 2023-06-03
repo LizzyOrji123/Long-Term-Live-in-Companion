@@ -2,11 +2,6 @@ body{
   background-image: linear-gradient(to right, #9D2235 , #3797A4)
 }
 
-// .card{
-//   display: flex;
-//   color: black;
-// }
-/* CSS File */
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   .text {
@@ -22,14 +17,14 @@ body{
     margin-top: 4px;
   }
 
-  .images{
-    max-width: 100%;
-    width: 100%;
-    height: auto !important;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 4px;
-  }
+  // .images{
+  //   max-width: 100%;
+  //   width: 100%;
+  //   height: auto !important;
+  //   border-radius: 20px;
+  //   margin: auto;
+  //   margin-top: 4px;
+  // }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -41,20 +36,21 @@ body{
   .image{
     max-width: 100%;
     width: 100%;
-    height: auto !important;
+    // height: auto !important;
     border-radius: 20px;
     margin: auto;
     margin-top: 4px;
+
   }
 
-  .images{
-    max-width: 100%;
-    width: 100%;
-    height: auto !important;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 4px;
-  }
+  // .images{
+  //   max-width: 100%;
+  //   width: 100%;
+  //   height: auto !important;
+  //   border-radius: 20px;
+  //   margin: auto;
+  //   margin-top: 4px;
+  // }
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -71,26 +67,20 @@ body{
     margin-top: 4px;
   }
 
-  .images{
-    max-width: 100%;
-    width: 100%;
-    height: auto !important;
-    border-radius: 20px;
-    margin: auto;
-    margin-top: 4px;
-  }
+  // .images{
+  //   max-width: 100%;
+  //   width: 100%;
+  //   height: auto !important;
+  //   border-radius: 20px;
+  //   margin: auto;
+  //   margin-top: 4px;
+  // }
 }
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .text {
     font-size: 20px;
     border-radius: 20px;
-  }
-
-  .images {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   .image {
@@ -107,18 +97,10 @@ body{
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   }
 
-  .home-img {
-    // display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    transition: all ease 0.2s;
-    margin: 20px;
-  }
+.container-fluid{
+  display: flex;
+}
 
-  .card, .home-img{
-    display: flex;
-  }
 }
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
@@ -141,13 +123,7 @@ body{
     box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   }
 
-  .home-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card{
+  .container-fluid{
     display: flex;
   }
- }
+}
