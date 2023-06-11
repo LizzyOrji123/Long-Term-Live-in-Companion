@@ -14,6 +14,14 @@ class ApplyController < ApplicationController
   def create
     @applies = Apply.new
     @applies.save
+    # (params[:contact])
+    @apply.request = request
+    if @apply.deliver
+      flash.now[:success] = 'Message sent!'
+    else
+      flash.now[:error] = 'Could not send message'
+      render :new
+    end
     redirect_to apply_path
   end
 end

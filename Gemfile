@@ -24,6 +24,7 @@ gem "turbo-rails"
 gem "sassc-rails"
 gem "simple_form"
 gem "autoprefixer-rails"
+gem 'mail_form'
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"

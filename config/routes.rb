@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   get "how_we_work", to: "pages#how_we_work"
   get "location", to: "pages#location"
   get "apply", to: "apply#index"
+  post "apply", to: "apply#index"
   get "apply/new", to: "apply#new"
+  post "apply/new", to: "apply#new"
+  get "apply_new", to: "apply#create"
   post "apply_new", to: "apply#create"
   get "apply/:id", to: "apply#show", as: :applies
 
