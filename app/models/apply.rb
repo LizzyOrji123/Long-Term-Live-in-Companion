@@ -13,7 +13,7 @@ class Apply < MailForm::Base
   def headers
     {
       :subject => "Application Form Inquiry",
-      :to => "your.email@address.com",
+      :to => "longtermliveincompanion@gmail.com",
       :from => %("#{name}" <#{email}>)
     }
   end

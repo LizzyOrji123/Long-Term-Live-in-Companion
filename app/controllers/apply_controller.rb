@@ -9,12 +9,13 @@ class ApplyController < ApplicationController
 
   def show
     @applies = Apply.find(params[:id])
+    render :show
   end
 
   def create
     @applies = Apply.new
     @applies.save
-    # (params[:contact])
+
     @apply.request = request
     if @apply.deliver
       flash.now[:success] = 'Message sent!'
@@ -23,6 +24,8 @@ class ApplyController < ApplicationController
       render :new
     end
     redirect_to apply_path
+
+
   end
 end
 

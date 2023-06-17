@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   get "location", to: "pages#location"
   get "apply", to: "apply#index"
   post "apply", to: "apply#index"
+  post "apply_create", to: "apply#create"
   get "apply/new", to: "apply#new"
   post "apply/new", to: "apply#new"
-  get "apply_new", to: "apply#create"
-  post "apply_new", to: "apply#create"
+  # get "apply_new", to: "apply#create"
   get "apply/:id", to: "apply#show", as: :applies
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
