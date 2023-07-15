@@ -22,6 +22,7 @@ class AppliesController < ApplicationController
       flash.now[:error] = 'Could not send message'
       render :new
     end
+    ApplicationPageMailer.confirm_application(@apply).deliver_now
     redirect_to apply_path(@apply)
   end
 end
