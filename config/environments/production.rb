@@ -89,7 +89,7 @@ Rails.application.configure do
   end
 
   config.action_mailer.delivery_method = :smtp
-config.action_mailer.default_url_options = { host: YOUR_WEBSITE_URL }
+config.action_mailer.default_url_options = { host: long-term-live-in-companions.com }
 
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
