@@ -89,11 +89,11 @@ Rails.application.configure do
   end
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "www.long-term-live-in-companions.com"" }
+  config.action_mailer.default_url_options = { host: "www.long-term-live-in-companions.com" }
 
 # SMTP settings for gmail
 config.action_mailer.smtp_settings = {
-  address: "smtp.gmail.com",
+  address: "longtermliveincompanion@gmail.com",
   port: 587,
   user_name: Rails.application.credentials.gmail.address,
   password: Rails.application.credentials.gmail.password,
