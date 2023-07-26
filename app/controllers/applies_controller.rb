@@ -23,7 +23,7 @@ class AppliesController < ApplicationController
       render :new
     end
     ApplicationPageMailer.confirm_application(@apply).deliver_now
-    redirect_to apply_path(@apply)
+    redirect_to applies_path(@apply)
   end
 end
 
