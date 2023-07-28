@@ -7,14 +7,13 @@ class AppliesController < ApplicationController
     @apply = Apply.new
   end
 
-  def show
-    @applies = Apply.find(params[:id])
-    render :show
+  def thank_you
+
   end
 
   def create
     @apply = Apply.new(apply_params)
-    if @apply.save
+    if @apply.valid?
       # @apply.request = request
       # @apply.deliver
       flash.now[:success] = 'Message sent!'
@@ -23,7 +22,7 @@ class AppliesController < ApplicationController
       render :new
     end
     ApplicationPageMailer.confirm_application(@apply).deliver_now
-    redirect_to applies_path(@apply)
+    redirect_to thank_you_path
   end
 end
 

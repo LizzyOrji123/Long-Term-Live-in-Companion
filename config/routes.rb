@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   resources :applies
   # get "apply_new", to: "apply#create"
   # get "apply/:id", to: "apply#show", as: :applies
+  get "thank_you", to: "applies#thank_you", as: "thank_you"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
