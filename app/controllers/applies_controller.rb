@@ -17,7 +17,7 @@ class AppliesController < ApplicationController
     if @apply.valid?
         # Save the uploaded image to a temporary location
         uploaded_image = apply_params[:photo]
-        file_path = Rails.root.join('storage', uploaded_image.original_filename)
+        file_path = Rails.root.join('tmp', uploaded_image.original_filename)
         File.open(file_path, 'wb') do |file|
           file.write(uploaded_image.read)
         end
