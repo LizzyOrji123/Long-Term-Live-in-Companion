@@ -3,7 +3,7 @@
     <%= link_to "root", class: "navbar-brand" do %>
       <%= image_tag ("https://res.cloudinary.com/drifm7p5t/image/upload/v1684450699/personal/barry_xjcdvh.png") %>
     <% end %>
-    <button class="navbar-toggler custom-toggler" type="button" data-action="navbar#toggleMenu" data-navbar-target="toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler custom-toggler" type="button" data-action="navbar#toggleMenu" data-navbar-target="toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white;">
       <span class="navbar-toggler-icon" data-navbar-target="hamburgerIcon"></span>
     </button>
     <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarSupportedContent" data-navbar-target="menu">
@@ -14,7 +14,7 @@
         <li class="nav-item"><%= link_to t("Interview Locations"), location_path, class: "nav-link" %></li>
         <li class="nav-item"><%= link_to t("Application Page"), applies_path, class: "nav-link" %></li>
       </div>
-      <span class="bar hide-on-tablet-and-mobile"> </span>
+      <span class="bar hide-on-tablet-and-mobile">  </span>
 
     </div>
   </div>
