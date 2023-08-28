@@ -71,8 +71,8 @@
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: beige;
 }
-.container-fluid {
-  display: inline-flex;
+.container {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: -10px;
