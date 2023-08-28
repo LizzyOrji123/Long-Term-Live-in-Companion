@@ -89,15 +89,15 @@ Rails.application.configure do
   end
 
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.default_url_options = { host: "www.long-term-live-in-companions.com" }
+  config.action_mailer.default_url_options = { host: "https://long-term-live-in-companions.herokuapp.com" }
 
-# SMTP settings for gmail
-config.action_mailer.smtp_settings = {
-  address: "longtermliveincompanion@gmail.com",
-  port: 587,
-  user_name: "longtermliveincompanion@gmail.com",
-  password: "texs gomc mwjl wztb",
-  authentication: "plain",
-  enable_starttls_auto: true
-}
+  # SMTP settings for gmail
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    user_name: "longtermliveincompanion@gmail.com",
+    password: "texs gomc mwjl wztb",
+    authentication: "plain",
+    enable_starttls_auto: true
+  }
 end
