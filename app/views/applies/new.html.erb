@@ -1,66 +1,68 @@
-<div class ="container-fluid">
-  <div class ="text">
-    <h2>
-    <p>Welcome to our Application Form Page</p>
-    <p>You can kindly fill the form below</p>
-    </h2>
-  </div>
+  <div class ="container-fluid">
+    <div class="row">
+    <div class ="text">
+      <h2>
+      <p>Welcome to our Application Form Page</p>
+      <p>You can kindly fill the form below</p>
+      </h2>
+    </div>
 
-  <%= form_with model: @apply, method: :post  do |f| %>
-    <div class="row justify-content-center">
+    <%= form_with model: @apply, method: :post  do |f| %>
       <div class="row justify-content-center">
-          <div class= "">
-            <div class="form">
-              <%= f.label :name %>
-              <%= f.text_field :name, required: true %>
-            </div>
+        <div class="row justify-content-center">
+            <div class= "">
+              <div class="form">
+                <%= f.label :name %>
+                <%= f.text_field :name, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :Date_of_Birth %>
-              <%= f.number_field :dob, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Date_of_Birth %>
+                <%= f.number_field :dob, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :gender %>
-              <%= f.text_field :gender, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :gender %>
+                <%= f.text_field :gender, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :Marital_Status %>
-              <%= f.text_field :marriage, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Marital_Status %>
+                <%= f.text_field :marriage, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :Occupation %>
-              <%= f.text_field :occupation, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Occupation %>
+                <%= f.text_field :occupation, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :email %>
-              <%= f.text_field :email, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :email %>
+                <%= f.text_field :email, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :Phone_Number %>
-              <%= f.number_field :phone, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Phone_Number %>
+                <%= f.number_field :phone, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.label :Country %>
-              <%= f.text_field :country, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Country %>
+                <%= f.text_field :country, required: true %>
+              </div>
 
-             <div class="form">
-              <%= f.label :Photo %>
-              <%= f.file_field :photo, required: true %>
-            </div>
+              <div class="form">
+                <%= f.label :Photo %>
+                <%= f.file_field :photo, required: true %>
+              </div>
 
-            <div class="form">
-              <%= f.submit %>
+              <div class="form">
+                <%= f.submit %>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>
